@@ -1,29 +1,25 @@
 #include <stdio.h>
 #include <string.h>
-void insert(char s1[100], char s2[100], int f)
+void insert(char *str1, char *str2, int f)
 {
-	int n;
 	int i;
-	n = strlen(s1);
-	for (i = 0; i < n; i++)
+	for(i=0;i<f;i++)
 	{
-		if (i == f)
-		{
-			printf("%s", s2);
-		}
-		printf("%c",s1[i]);
+		printf("%c",*(str1+i));
 	}
+		printf("%s",str2);
+	puts(str1+f);
 }
 int main()
 {
 	char s1[100];
 	char s2[100];
 	int f;
-	printf("è¯·è¾“å…¥å­—ç¬¦ä¸²s1çš„å†…å®¹ï¼š");
+	printf("ÇëÊäÈë×Ö·û´®s1µÄÄÚÈİ£º");
 	scanf("%s",s1);
-	printf("è¯·è¾“å…¥å­—ç¬¦ä¸²s2çš„å†…å®¹ï¼š");
+	printf("ÇëÊäÈë×Ö·û´®s2µÄÄÚÈİ£º");
 	scanf("%s",s2);
-	printf("è¾“å…¥æ’å…¥s1çš„ä½ç½®ï¼š");
+	printf("ÊäÈë²åÈës1µÄÎ»ÖÃ£º");
 	scanf("%d", &f);
 	insert(s1,s2,f);
 }
