@@ -8,9 +8,9 @@ int main()
 	int i = 1;
 	while (i <= 3)
 	{
-		printf("请输入密码：\n");
+		printf("请输入密码：\n");                   
 		gets(pwstr);
-		if (strcmp(password, pwstr))
+		if (strcmp(password, pwstr))                \\strcmp用于比较两个字符串
 		{
 			printf("第%d次，密码输入错误！\n", i);
 		}
