@@ -1,0 +1,23 @@
+#include <stdio.h>
+int sum(int a,int b)
+{
+	int c;
+	c=a+b;
+	return c;
+}
+void swap(int *a,int *b)
+{
+	int t;
+	t=*a;
+	*a=*b;
+	*b=t;
+}
+int main()
+{
+	int a,b;
+	scanf("%d",&a);
+	scanf("%d",&b);
+	printf("sum=%d\n",sum(a,b));
+	swap(&a,&b);
+	printf("a=%d,b=%d\n",a,b);
+}
