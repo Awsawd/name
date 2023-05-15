@@ -7,5 +7,8 @@ int main()
 	scanf("%d",&n);
 	scanf("%d",&m);
 	printf("两站之间行车需要%d分钟",a[n-1]-a[m-1]);
+	
+	printf("随便新加一句话\n");
 	return 0;
+	
 }
