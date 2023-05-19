@@ -56,7 +56,7 @@ int main()
 	Shape *pc;
 	
 	int chioce;
-	cout<<"***********ÇëÊäÈë***********"<<endl;
+	cout<<"***********Ã‡Ã«ÃŠÃ¤ÃˆÃ«***********"<<endl;
 	cout<<"***********0.exit***********"<<endl;
 	cout<<"***********1.Rect***********"<<endl;
 	cout<<"**********2.Circle**********"<<endl;
@@ -74,6 +74,8 @@ int main()
 				pc = &r;
 				pc->draw();
 				break;
+			default:
+				cout<<"error!"<<endl;
 			case 0:
 				break;
 		}
