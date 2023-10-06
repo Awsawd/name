@@ -19,7 +19,7 @@ Node* getNewNode(int key)
 Node* insert(Node* root, int key)
 {
     if (root == NULL) return getNewNode(key);
-    if (rand() % 2) root->lchild = insert(root->lchild, key);
+    if (rand() % 2) root->lchild = insert(root->lchild, key);  //随机插入
     else root->rchild = insert(root->rchild, key);
     return root;
 }
